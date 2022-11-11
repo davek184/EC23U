@@ -3915,7 +3915,7 @@
       (reference "C9") (unit 1) (value "1u") (footprint "Capacitor_SMD:C_0402_1005Metric")
     )
     (path "/199124ca-dd64-45cf-a063-97cc545cbea7/61d50046-ba1d-497a-ba35-9569c428f6a2"
-      (reference "C10") (unit 1) (value "0.1u") (footprint "Capacitor_SMD:C_0402_1005Metric")
+      (reference "C10") (unit 1) (value "100n") (footprint "Capacitor_SMD:C_0402_1005Metric")
     )
     (path "/199124ca-dd64-45cf-a063-97cc545cbea7/50ea5760-a741-4807-819e-9bb2a3a0569f"
       (reference "C11") (unit 1) (value "220p") (footprint "")
