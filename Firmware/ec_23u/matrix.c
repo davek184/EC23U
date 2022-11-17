@@ -19,11 +19,11 @@
 #include "debug.h"
 
 #ifndef LOW_THRESHOLD
-#    define LOW_THRESHOLD 650
+#    define LOW_THRESHOLD 800
 #endif
 
 #ifndef HIGH_THRESHOLD
-#    define HIGH_THRESHOLD 750
+#    define HIGH_THRESHOLD 900
 #endif
 
 /* matrix state(1:on, 0:off) */
@@ -31,16 +31,16 @@ extern matrix_row_t raw_matrix[MATRIX_ROWS]; // raw values
 extern matrix_row_t matrix[MATRIX_ROWS];     // debounced values
 
 const uint16_t low_threshold[MATRIX_ROWS][MATRIX_COLS] = {
-    { 750, 750, 750, 750, 750, 750 }, \
-    { 750, 750, 750, 750, 750, 750 }, \
-    { 750, 750, 750, 750, 750, 750 }, \
-    { 750, 750, 750, 750, 750, 750 }  \
+    { 900, 900, 900, 900, 900, 900 }, \
+    { 900, 900, 900, 900, 900, 900 }, \
+    { 900, 900, 900, 900, 900, 900 }, \
+    { 900, 900, 900, 900, 900, 900 }  \
 };
 const uint16_t high_threshold[MATRIX_ROWS][MATRIX_COLS] = {
-    { 650, 650, 650, 650, 650, 650 }, \
-    { 650, 650, 650, 650, 650, 650 }, \
-    { 650, 650, 650, 650, 650, 650 }, \
-    { 650, 650, 650, 650, 650, 650 }  \
+    { 800, 800, 800, 800, 800, 800 }, \
+    { 800, 800, 800, 800, 800, 800 }, \
+    { 800, 800, 800, 800, 800, 800 }, \
+    { 800, 800, 800, 800, 800, 800 }  \
 };
 
 void matrix_init_custom(void) {
