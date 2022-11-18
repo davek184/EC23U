@@ -33,7 +33,11 @@ The supported layout options are the following:
 
 ### Prototypes
 
-**TBD**
+![PCB Front](/Assets/PCB_front.png)
+
+![PCB Back](/Assets/PCB_back.png)
+
+**NOTE**: The silkscreen text near the JST connector has the `GND` and `VBUS` label swapped. This is wrong and have been fixed in the latest revision.
 
 ## Revisions and relative features
 
