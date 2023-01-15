@@ -1,4 +1,4 @@
-/* Copyright 2022 Cipulot
+/* Copyright 2023 Cipulot
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -19,7 +19,8 @@
 #include "ec_switch_matrix.h"
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-    [0] = LAYOUT_all(
+    // clang-format off
+    [0] = LAYOUT(
         KC_ESC, KC_TAB,  KC_BSPC, KC_LSFT,
         KC_NUM, KC_PSLS, KC_PAST, KC_PEQL,
         KC_P7,  KC_P8,   KC_P9,   KC_PMNS,
@@ -27,7 +28,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_P1,  KC_P2,   KC_P3,   KC_PENT,
         KC_P0,  KC_P0,   KC_PDOT, KC_PENT),
 
-    [1] = LAYOUT_all(
+    [1] = LAYOUT(
         _______, _______, _______, _______,
         _______, _______, _______, _______,
         _______, _______, _______, _______,
@@ -36,7 +37,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, _______, _______, _______),
 
 
-    [2] = LAYOUT_all(
+    [2] = LAYOUT(
         _______, _______, _______, _______,
         _______, _______, _______, _______,
         _______, _______, _______, _______,
@@ -44,11 +45,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, _______, _______, _______,
         _______, _______, _______, _______),
 
-    [3] = LAYOUT_all(
+    [3] = LAYOUT(
         _______, _______, _______, _______,
         _______, _______, _______, _______,
         _______, _______, _______, _______,
         _______, _______, _______, _______,
         _______, _______, _______, _______,
         _______, _______, _______, _______)
+    // clang-format on
 };

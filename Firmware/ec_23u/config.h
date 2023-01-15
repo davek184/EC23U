@@ -1,4 +1,4 @@
-/* Copyright 2022 Cipulot
+/* Copyright 2023 Cipulot
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -61,4 +61,3 @@
 /* Locking resynchronize hack */
 #define LOCKING_RESYNC_ENABLE
 
-#define DEBUG_MATRIX_SCAN_RATE

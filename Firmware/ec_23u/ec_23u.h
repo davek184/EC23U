@@ -1,4 +1,4 @@
-/* Copyright 2022 Cipulot
+/* Copyright 2023 Cipulot
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -18,7 +18,8 @@
 
 #include "quantum.h"
 
-#define LAYOUT_all( \
+// clang-format off
+#define LAYOUT( \
     k00, k01, k02, k03, \
     k10, k11, k12, k13, \
     k20, k21, k22, k23, \
@@ -31,3 +32,4 @@
     { k20, k21, k22, k23, k24, k25 }, \
     { k30, k31, k32, k33, k34, k35 }  \
 }
+// clang-format on

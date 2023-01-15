@@ -1,4 +1,4 @@
-/* Copyright 2022 Cipulot
+/* Copyright 2023 Cipulot
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -143,7 +143,7 @@ static bool ecsm_update_key(matrix_row_t* current_row, uint8_t row, uint8_t col,
 bool ecsm_matrix_scan(matrix_row_t current_matrix[]) {
     bool updated = false;
 
-    for (int col = 0; col < sizeof(col_channels); col++) {
+    for (int col = 0; col < (sizeof(col_channels) - 2); col++) {
         for (int row = 0; row < MATRIX_ROWS; row++) {
             ecsm_sw_value[row][col] = ecsm_readkey_raw(0, row, col);
             updated |= ecsm_update_key(&current_matrix[row], row, col, ecsm_sw_value[row][col]);
